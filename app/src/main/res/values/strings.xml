@@ -3,4 +3,9 @@
     <string name="advanced_ui">Advanced UI</string>
     <string name="custom_button">Custom Button</string>
     <string name="input_your_name">Input your name</string>
+    <string name="silahkan_pilih_kursi">Silahkan Pilih Kursi</string>
+    <string name="selesai">Selesai</string>
+    <string name="silahkan_pilih_kursi_terlebih_dahulu">Silahkan pilih kursi terlebih dahulu.</string>
+    <string name="kursi_anda_nomor">Kursi Anda nomor %1$s.</string>
+    <string name="custom_view">Custom View</string>
 </resources>

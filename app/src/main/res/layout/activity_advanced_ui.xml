@@ -13,6 +13,14 @@
         android:id="@+id/btn_move_to_custom_button"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
         android:text="@string/custom_button" />
+
+    <Button
+        android:id="@+id/btn_move_to_custom_view"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/custom_view" />
 
 </LinearLayout>

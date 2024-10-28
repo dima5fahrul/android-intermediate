@@ -31,17 +31,14 @@ class CustomButtonAndEditTextActivity : AppCompatActivity() {
         setMyButtonEnabled()
 
         myEditText.addTextChangedListener(object : TextWatcher {
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                TODO("Not yet implemented")
-            }
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) =
+                Unit
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 setMyButtonEnabled()
             }
 
-            override fun afterTextChanged(s: Editable?) {
-                TODO("Not yet implemented")
-            }
+            override fun afterTextChanged(s: Editable?) = Unit
         })
 
         myButton.setOnClickListener {

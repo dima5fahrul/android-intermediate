@@ -8,6 +8,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.androidintermediate.R
 import com.example.androidintermediate.advanced_ui.custom_button.CustomButtonAndEditTextActivity
+import com.example.androidintermediate.advanced_ui.custom_view.CustomViewActivity
 import com.example.androidintermediate.databinding.ActivityAdvancedUiBinding
 
 class AdvancedUiActivity : AppCompatActivity() {
@@ -20,6 +21,7 @@ class AdvancedUiActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnMoveToCustomButton.setOnClickListener { onButtonClicked(it) }
+        binding.btnMoveToCustomView.setOnClickListener { onButtonClicked(it) }
 
         compatView()
     }
@@ -29,6 +31,12 @@ class AdvancedUiActivity : AppCompatActivity() {
             R.id.btn_move_to_custom_button -> {
                 val intent = intent
                 intent.setClass(this, CustomButtonAndEditTextActivity::class.java)
+                startActivity(intent)
+            }
+            
+            R.id.btn_move_to_custom_view -> {
+                val intent = intent
+                intent.setClass(this, CustomViewActivity::class.java)
                 startActivity(intent)
             }
         }

@@ -23,17 +23,14 @@ class MyEditText @JvmOverloads constructor(
         setOnTouchListener(this)
 
         addTextChangedListener(object : TextWatcher {
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                TODO("Not yet implemented")
-            }
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) =
+                Unit
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 if (s.toString().isNotEmpty()) showClearButton() else hideClearButton()
             }
 
-            override fun afterTextChanged(s: Editable?) {
-                TODO("Not yet implemented")
-            }
+            override fun afterTextChanged(s: Editable?) = Unit
         })
     }
 
@@ -90,7 +87,7 @@ class MyEditText @JvmOverloads constructor(
         }
         return false
     }
-    
+
     private fun showClearButton() {
         setButtonDrawables(endOfTheText = clearButtonImage)
 
