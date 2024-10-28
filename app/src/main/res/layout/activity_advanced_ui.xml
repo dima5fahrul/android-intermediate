@@ -23,4 +23,11 @@
         android:layout_marginBottom="8dp"
         android:text="@string/custom_view" />
 
+    <Button
+        android:id="@+id/btn_move_to_canvas_draw"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/canvas_draw" />
+
 </LinearLayout>

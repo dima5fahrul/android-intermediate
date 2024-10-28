@@ -8,4 +8,7 @@
     <string name="silahkan_pilih_kursi_terlebih_dahulu">Silahkan pilih kursi terlebih dahulu.</string>
     <string name="kursi_anda_nomor">Kursi Anda nomor %1$s.</string>
     <string name="custom_view">Custom View</string>
+    <string name="like">Suka</string>
+    <string name="dislike">Tidak Suka</string>
+    <string name="canvas_draw">Canvas Draw</string>
 </resources>
