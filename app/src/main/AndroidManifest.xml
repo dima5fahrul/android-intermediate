@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +14,51 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidIntermediate"
         tools:targetApi="31">
+        <activity
+            android:name=".animation.property_animation.view.welcome.WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".animation.property_animation.view.signup.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".animation.property_animation.view.login.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".animation.property_animation.view.property_animation_main.PropertyAnimationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".animation.AnimationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".advanced_ui.web_view.WebViewActivity"
+            android:exported="false" />
+
+        <receiver
+            android:name=".advanced_ui.widget.ImageBannerWidget"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/image_banner_widget_info" />
+        </receiver>
+        <receiver
+            android:name=".advanced_ui.widget.RandomNumberWidget"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/random_number_widget_info" />
+        </receiver>
+
+        <activity
+            android:name=".advanced_ui.widget.WidgetActivity"
+            android:exported="false" />
         <activity
             android:name=".advanced_ui.canvas_draw.CanvasDrawActivity"
             android:exported="false" />
@@ -33,6 +80,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".advanced_ui.widget.StackWidgetService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
     </application>
 
 </manifest>

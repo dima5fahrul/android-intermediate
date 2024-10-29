@@ -30,4 +30,18 @@
         android:layout_marginBottom="8dp"
         android:text="@string/canvas_draw" />
 
+    <Button
+        android:id="@+id/btn_move_to_widget"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/widget" />
+
+    <Button
+        android:id="@+id/btn_move_to_web_view"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/web_view" />
+
 </LinearLayout>

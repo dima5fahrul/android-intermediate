@@ -11,6 +11,8 @@ import com.example.androidintermediate.R
 import com.example.androidintermediate.advanced_ui.canvas_draw.CanvasDrawActivity
 import com.example.androidintermediate.advanced_ui.custom_button.CustomButtonAndEditTextActivity
 import com.example.androidintermediate.advanced_ui.custom_view.CustomViewActivity
+import com.example.androidintermediate.advanced_ui.web_view.WebViewActivity
+import com.example.androidintermediate.advanced_ui.widget.WidgetActivity
 import com.example.androidintermediate.databinding.ActivityAdvancedUiBinding
 
 class AdvancedUiActivity : AppCompatActivity() {
@@ -25,6 +27,8 @@ class AdvancedUiActivity : AppCompatActivity() {
         binding.btnMoveToCustomButton.setOnClickListener { onButtonClicked(it) }
         binding.btnMoveToCustomView.setOnClickListener { onButtonClicked(it) }
         binding.btnMoveToCanvasDraw.setOnClickListener { onButtonClicked(it) }
+        binding.btnMoveToWidget.setOnClickListener { onButtonClicked(it) }
+        binding.btnMoveToWebView.setOnClickListener { onButtonClicked(it) }
 
         compatView()
     }
@@ -34,10 +38,10 @@ class AdvancedUiActivity : AppCompatActivity() {
     private fun onButtonClicked(it: View?) {
         when (it?.id) {
             R.id.btn_move_to_custom_button -> startActivity(setClass(CustomButtonAndEditTextActivity::class.java))
-
             R.id.btn_move_to_custom_view -> startActivity(setClass(CustomViewActivity::class.java))
-
             R.id.btn_move_to_canvas_draw -> startActivity(setClass(CanvasDrawActivity::class.java))
+            R.id.btn_move_to_widget -> startActivity(setClass(WidgetActivity::class.java))
+            R.id.btn_move_to_web_view -> startActivity(setClass(WebViewActivity::class.java))
         }
     }
 

@@ -7,18 +7,12 @@
     android:gravity="top|center"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".MainActivity">
+    tools:context=".animation.AnimationActivity">
 
     <Button
-        android:id="@+id/btn_move_to_advanced_ui"
+        android:id="@+id/btn_move_to_property_animation"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="@string/advanced_ui" />
-
-    <Button
-        android:id="@+id/btn_move_to_animation"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:text="@string/animation" />
+        android:text="@string/property_animation" />
 
 </LinearLayout>
