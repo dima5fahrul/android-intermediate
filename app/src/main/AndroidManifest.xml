@@ -15,6 +15,9 @@
         android:theme="@style/Theme.AndroidIntermediate"
         tools:targetApi="31">
         <activity
+            android:name=".animation.motion_layout.MotionLayoutActivity"
+            android:exported="false" />
+        <activity
             android:name=".animation.transition.HeroActivity"
             android:exported="false" />
         <activity
