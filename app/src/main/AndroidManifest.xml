@@ -15,6 +15,12 @@
         android:theme="@style/Theme.AndroidIntermediate"
         tools:targetApi="31">
         <activity
+            android:name=".animation.transition.HeroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".animation.transition.TransitionActivity"
+            android:exported="false" />
+        <activity
             android:name=".animation.property_animation.view.welcome.WelcomeActivity"
             android:exported="false" />
         <activity

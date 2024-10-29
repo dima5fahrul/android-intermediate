@@ -10,6 +10,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.androidintermediate.R
 import com.example.androidintermediate.animation.property_animation.view.property_animation_main.PropertyAnimationActivity
+import com.example.androidintermediate.animation.transition.TransitionActivity
 import com.example.androidintermediate.databinding.ActivityAnimationBinding
 
 class AnimationActivity : AppCompatActivity() {
@@ -24,6 +25,7 @@ class AnimationActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnMoveToPropertyAnimation.setOnClickListener { onButtonClicked(it) }
+        binding.btnMoveToTransition.setOnClickListener { onButtonClicked(it) }
 
         viewCompat()
     }
@@ -34,6 +36,8 @@ class AnimationActivity : AppCompatActivity() {
         when (it?.id) {
             R.id.btn_move_to_property_animation ->
                 startActivity(setClass(PropertyAnimationActivity::class.java))
+
+            R.id.btn_move_to_transition -> startActivity(setClass(TransitionActivity::class.java))
         }
     }
 

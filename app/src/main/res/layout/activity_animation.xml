@@ -15,4 +15,10 @@
         android:layout_height="wrap_content"
         android:text="@string/property_animation" />
 
+    <Button
+        android:id="@+id/btn_move_to_transition"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/transition" />
+
 </LinearLayout>
