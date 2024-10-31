@@ -113,4 +113,8 @@
     <string name="ratingDescription">Gadah peringkat %1$s saking %2$s</string>
     <string name="permission">Permission</string>
     <string name="service">Service</string>
+    <string name="media">Media</string>
+    <string name="soundpool">SoundPool</string>
+    <string name="exo_player">Exo Player</string>
+    <string name="camera_gallery"><![CDATA[Camera & Gallery]]></string>
 </resources>

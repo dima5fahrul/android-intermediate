@@ -32,4 +32,10 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="@string/service" />
+
+    <Button
+        android:id="@+id/btn_move_to_media"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/media" />
 </LinearLayout>
