@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> <!-- android 14 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
 
     <application
         android:allowBackup="true"
@@ -14,6 +17,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidIntermediate"
         tools:targetApi="31">
+        <service
+            android:name=".service.MyBoundService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".service.MyForegroundService"
+            android:enabled="true"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="explanation_for_special_use" />
+        </service>
+        <service
+            android:name=".service.MyBackgroundService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".service.ServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".localization.LocalizationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".localization.multi_language.MultiLanguageActivity"
+            android:exported="false" />
         <activity
             android:name=".animation.motion_layout.MotionLayoutActivity"
             android:exported="false" />

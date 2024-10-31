@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Android Intermediate</string>
     <string name="advanced_ui">Advanced UI</string>
@@ -86,36 +87,30 @@
     <string name="desc_menu_3">Validasi skill Anda melalui 1-on-1 Professional Code Review yang diberikan langsung oleh Developer Expert.</string>
     <string name="desc_menu_4">Sertifikat yang membuktikan pengetahuan fundamental beserta keterampilan nyata yang diinginkan perusahaan global.</string>
     <string name="learn_now">Belajar Sekarang</string>
-    <string name="localization_description">Cool limited edition running shoes. Wearing these shoes will improve your understanding when learning to code.\n\nStuff is always there. Various sizes and colors are available. Order now!</string>
-    <string name="localization_buy">Buy Now!</string>
-    <string name="localization_size">42</string>
-    <string name="localization_store">Dicoding Store</string>
     <string name="localization">Localization</string>
     <string name="multi_language">Multi Language</string>
-    <string name="localization_color">Brown</string>
-    <string name="localization_name">Running Shoes</string>
+
+    <string name="localization_description">Sepatu damel playon edisi namung kedik. Yen ngagem sepatu niki saget ningkataken pemahaman panjenengan nalika sinau coding.\n\nBarang mesti wonten. Sepatu punika wonten ing katah ukuran lan warna. Monggo dipun pesen!</string>
+    <string name="localization_buy">Tumbasen Sak Niki!</string>
+    <string name="localization_size">42</string>
+    <string name="localization_color">Soklat</string>
+    <string name="localization_store">Warung Dicoding</string>
+    <string name="localization_name">Sepatu Damel Playon</string>
 
     <string name="price">200000.00</string>
     <string name="localization_rating">4.5</string>
     <string name="localization_date">5/8/2021</string>
-    <string name="countRating">1249</string>
 
-    <string name="dateFormat">Uploaded on %1$s</string>
+    <string name="countRating">1249</string>
+    <string name="dateFormat">Dipasang %1$s</string>
     <string name="ratingFormat">%1$s (%2$s)</string>
 
-    <string name="settingDescription">Change language</string>
-    <string name="previewDescription">"Picture of Shoes"</string>
-    <string name="storeDescription">From %1$s</string>
-    <string name="sizeDescription">The size is  %1$s</string>
-    <string name="colorDescription">The color is %1$s</string>
-    <string name="ratingDescription">Got a rating of %1$s from %2$s</string>
+    <string name="settingDescription">Ganti Boso</string>
+    <string name="previewDescription">"Gambar Sepatu"</string>
+    <string name="storeDescription">Seko %1$s</string>
+    <string name="sizeDescription">Ukuranipun  %1$s</string>
+    <string name="colorDescription">Warnanipun %1$s</string>
+    <string name="ratingDescription">Gadah peringkat %1$s saking %2$s</string>
     <string name="permission">Permission</string>
-
-    <string name="start_background_service" translatable="false">Start Background Service</string>
-    <string name="stop_background_service" translatable="false">Stop Background Service</string>
-    <string name="start_foreground_service" translatable="false">Start Foreground Service</string>
-    <string name="stop_foreground_service" translatable="false">Stop Foreground Service</string>
-    <string name="start_bound_service" translatable="false">Start Bound Service</string>
-    <string name="stop_bound_service" translatable="false">Stop Bound Service</string>
     <string name="service">Service</string>
 </resources>

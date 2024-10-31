@@ -10,6 +10,8 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.androidintermediate.advanced_ui.AdvancedUiActivity
 import com.example.androidintermediate.animation.AnimationActivity
 import com.example.androidintermediate.databinding.ActivityMainBinding
+import com.example.androidintermediate.localization.LocalizationActivity
+import com.example.androidintermediate.service.ServiceActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -22,6 +24,8 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnMoveToAdvancedUi.setOnClickListener { onButtonClicked(it) }
         binding.btnMoveToAnimation.setOnClickListener { onButtonClicked(it) }
+        binding.btnMoveToLocalization.setOnClickListener { onButtonClicked(it) }
+        binding.btnMoveToService.setOnClickListener { onButtonClicked(it) }
 
         compatView()
     }
@@ -32,6 +36,8 @@ class MainActivity : AppCompatActivity() {
         when (it?.id) {
             R.id.btn_move_to_advanced_ui -> startActivity(setClass(AdvancedUiActivity::class.java))
             R.id.btn_move_to_animation -> startActivity(setClass(AnimationActivity::class.java))
+            R.id.btn_move_to_localization -> startActivity(setClass(LocalizationActivity::class.java))
+            R.id.btn_move_to_service -> startActivity(setClass(ServiceActivity::class.java))
         }
     }
 
