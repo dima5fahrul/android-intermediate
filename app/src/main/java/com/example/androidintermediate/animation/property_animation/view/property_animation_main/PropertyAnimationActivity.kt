@@ -18,6 +18,7 @@ class PropertyAnimationActivity : AppCompatActivity() {
     private val viewModel by viewModels<PropertyAnimationViewModel> {
         ViewModelFactory.getInstance(this)
     }
+    
     private lateinit var binding: ActivityPropertyAnimationBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
