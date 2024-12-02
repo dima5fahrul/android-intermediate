@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.androidintermediate.R
 import com.example.androidintermediate.databinding.ActivityGeoLocationBinding
+import com.example.androidintermediate.geo_location.geofence.MapsFenceActivity
 import com.example.androidintermediate.geo_location.google_maps.MapsActivity
 import com.example.androidintermediate.geo_location.location_tracker.MapsTrackerActivity
 
@@ -29,6 +30,7 @@ class GeoLocationActivity : AppCompatActivity() {
 
         binding.btnMoveToGoogleMaps.setOnClickListener { onButtonClicked(it) }
         binding.btnMoveToMapsTracker.setOnClickListener { onButtonClicked(it) }
+        binding.btnMoveToMapsFence.setOnClickListener { onButtonClicked(it) }
     }
 
     private fun setClass(cls: Class<*>): Intent = Intent(this, cls)
@@ -37,6 +39,7 @@ class GeoLocationActivity : AppCompatActivity() {
         when (it?.id) {
             R.id.btn_move_to_google_maps -> startActivity(setClass(MapsActivity::class.java))
             R.id.btn_move_to_maps_tracker -> startActivity(setClass(MapsTrackerActivity::class.java))
+            R.id.btn_move_to_maps_fence -> startActivity(setClass(MapsFenceActivity::class.java))
         }
     }
 }

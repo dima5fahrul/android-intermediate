@@ -21,4 +21,10 @@
         android:layout_height="wrap_content"
         android:text="@string/maps_tracker" />
 
+    <Button
+        android:id="@+id/btn_move_to_maps_fence"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/maps_fence" />
+
 </LinearLayout>
