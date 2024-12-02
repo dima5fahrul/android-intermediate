@@ -135,4 +135,17 @@
     <string name="gallery" translatable="false">Galeri</string>
     <string name="upload" translatable="false">Unggah</string>
     <string name="empty_image_warning" translatable="false">Silakan masukkan berkas gambar terlebih dahulu.</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="geo_location">Geo Location</string>
+    <string name="google_maps">Google Maps</string>
+    <string name="normal">Normal</string>
+    <string name="satellite">Satellite</string>
+    <string name="terrain">Terrain</string>
+    <string name="hybird">Hybird</string>
+    <string name="title_activity_maps_tracker">MapsTrackerActivity</string>
+    <string name="start_location">Start Location</string>
+    <string name="mulai">Mulai</string>
+    <string name="stop_tracking">Stop Tracking</string>
+    <string name="start_tracking">Start Tracking</string>
+    <string name="maps_tracker">Maps tracker</string>
 </resources>

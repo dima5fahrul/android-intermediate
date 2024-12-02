@@ -10,6 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.androidintermediate.advanced_ui.AdvancedUiActivity
 import com.example.androidintermediate.animation.AnimationActivity
 import com.example.androidintermediate.databinding.ActivityMainBinding
+import com.example.androidintermediate.geo_location.GeoLocationActivity
 import com.example.androidintermediate.localization.LocalizationActivity
 import com.example.androidintermediate.media.MediaActivity
 import com.example.androidintermediate.service.ServiceActivity
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         binding.btnMoveToLocalization.setOnClickListener { onButtonClicked(it) }
         binding.btnMoveToService.setOnClickListener { onButtonClicked(it) }
         binding.btnMoveToMedia.setOnClickListener { onButtonClicked(it) }
+        binding.btnMoveToGeoLocation.setOnClickListener { onButtonClicked(it) }
 
         compatView()
     }
@@ -41,6 +43,7 @@ class MainActivity : AppCompatActivity() {
             R.id.btn_move_to_localization -> startActivity(setClass(LocalizationActivity::class.java))
             R.id.btn_move_to_service -> startActivity(setClass(ServiceActivity::class.java))
             R.id.btn_move_to_media -> startActivity(setClass(MediaActivity::class.java))
+            R.id.btn_move_to_geo_location -> startActivity(setClass(GeoLocationActivity::class.java))
         }
     }
 
