@@ -19,6 +19,7 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
 
     <application
+        android:name=".advanced_database.database_relation.MyApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -28,6 +29,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidIntermediate"
         tools:targetApi="31">
+        <activity
+            android:name=".advanced_database.database_relation.DatabaseRelationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".advanced_database.AdvancedDatabaseActivity"
+            android:exported="false" />
+
         <receiver
             android:name=".geo_location.geofence.GeofenceBroadcastReceiver"
             android:enabled="true"

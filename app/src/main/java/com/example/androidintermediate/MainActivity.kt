@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.androidintermediate.advanced_database.AdvancedDatabaseActivity
 import com.example.androidintermediate.advanced_ui.AdvancedUiActivity
 import com.example.androidintermediate.animation.AnimationActivity
 import com.example.androidintermediate.databinding.ActivityMainBinding
@@ -30,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         binding.btnMoveToService.setOnClickListener { onButtonClicked(it) }
         binding.btnMoveToMedia.setOnClickListener { onButtonClicked(it) }
         binding.btnMoveToGeoLocation.setOnClickListener { onButtonClicked(it) }
+        binding.btnMoveToAdvancedDatabase.setOnClickListener { onButtonClicked(it) }
 
         compatView()
     }
@@ -44,6 +46,7 @@ class MainActivity : AppCompatActivity() {
             R.id.btn_move_to_service -> startActivity(setClass(ServiceActivity::class.java))
             R.id.btn_move_to_media -> startActivity(setClass(MediaActivity::class.java))
             R.id.btn_move_to_geo_location -> startActivity(setClass(GeoLocationActivity::class.java))
+            R.id.btn_move_to_advanced_database -> startActivity(setClass(AdvancedDatabaseActivity::class.java))
         }
     }
 

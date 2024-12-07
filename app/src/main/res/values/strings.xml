@@ -150,4 +150,10 @@
     <string name="maps_tracker">Maps tracker</string>
     <string name="title_activity_maps_fence">MapsFenceActivity</string>
     <string name="maps_fence">Maps Fence</string>
+    <string name="advanced_database">Advanced Database</string>
+    <string name="database_relation">Database Relation</string>
+    <string name="single_table">Single Table</string>
+    <string name="many_to_one">Many to One</string>
+    <string name="one_to_many">One to Many</string>
+    <string name="many_to_many">Many to Many</string>
 </resources>
