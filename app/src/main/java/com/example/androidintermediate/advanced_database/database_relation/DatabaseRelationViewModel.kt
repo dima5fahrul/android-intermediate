@@ -3,17 +3,12 @@ package com.example.androidintermediate.advanced_database.database_relation
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.viewModelScope
 import com.example.androidintermediate.advanced_database.database_relation.database.Student
 import com.example.androidintermediate.advanced_database.database_relation.database.StudentAndUniversity
 import com.example.androidintermediate.advanced_database.database_relation.database.StudentWithCourse
 import com.example.androidintermediate.advanced_database.database_relation.database.UniversityAndStudent
-import kotlinx.coroutines.launch
 
 class DatabaseRelationViewModel(private val repository: StudentRepository) : ViewModel() {
-    init {
-        insertAllData()
-    }
 
     fun getAllStudent(): LiveData<List<Student>> = repository.getAllStudent()
     fun getAllStudentAndUniversity():
@@ -24,10 +19,6 @@ class DatabaseRelationViewModel(private val repository: StudentRepository) : Vie
 
     fun getAllStudentWithCourse(): LiveData<List<StudentWithCourse>> =
         repository.getAllStudentWithCourse()
-
-    private fun insertAllData() {
-        viewModelScope.launch { repository.insertAllData() }
-    }
 }
 
 class DatabaseRelationViewModelFactory(private val repository: StudentRepository) :

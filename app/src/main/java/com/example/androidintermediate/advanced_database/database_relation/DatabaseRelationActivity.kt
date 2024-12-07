@@ -64,7 +64,10 @@ class DatabaseRelationActivity : AppCompatActivity() {
     private fun getStudent() {
         val adapter = StudentListAdapter()
         binding.rvStudent.adapter = adapter
-        viewModel.getAllStudent().observe(this) { adapter.submitList(it) }
+        viewModel.getAllStudent().observe(this) {
+            it.forEach(::println)
+            adapter.submitList(it)
+        }
     }
 
     private fun getStudentAndUniversity() {

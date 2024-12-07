@@ -6,7 +6,6 @@ import com.example.androidintermediate.advanced_database.database_relation.datab
 import com.example.androidintermediate.advanced_database.database_relation.database.StudentDao
 import com.example.androidintermediate.advanced_database.database_relation.database.StudentWithCourse
 import com.example.androidintermediate.advanced_database.database_relation.database.UniversityAndStudent
-import com.example.androidintermediate.advanced_database.database_relation.helper.InitialDataSource
 
 class StudentRepository(private val studentDao: StudentDao) {
     fun getAllStudent(): LiveData<List<Student>> = studentDao.getAllStudent()
@@ -19,10 +18,4 @@ class StudentRepository(private val studentDao: StudentDao) {
     fun getAllStudentWithCourse(): LiveData<List<StudentWithCourse>> =
         studentDao.getAllStudentWithCourse()
 
-    suspend fun insertAllData() {
-        studentDao.insertStudent(InitialDataSource.getStudents())
-        studentDao.insertUniversity(InitialDataSource.getUniversities())
-        studentDao.insertCourse(InitialDataSource.getCourses())
-        studentDao.insertCourseStudentCrossRef(InitialDataSource.getCourseStudentRelation())
-    }
 }
