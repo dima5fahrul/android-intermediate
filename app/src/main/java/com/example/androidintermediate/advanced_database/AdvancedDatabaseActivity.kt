@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.androidintermediate.R
+import com.example.androidintermediate.advanced_database.database_paging.ui.DatabasePagingActivity
 import com.example.androidintermediate.advanced_database.database_relation.DatabaseRelationActivity
 import com.example.androidintermediate.databinding.ActivityAdvancedDatabaseBinding
 
@@ -20,8 +21,9 @@ class AdvancedDatabaseActivity : AppCompatActivity() {
         binding = ActivityAdvancedDatabaseBinding.inflate(layoutInflater)
         setContentView(binding.root)
         compatView()
-        
+
         binding.btnMoveToDatabaseRelation.setOnClickListener { onButtonClicked(it) }
+        binding.btnMoveToDatabasePaging.setOnClickListener { onButtonClicked(it) }
     }
 
     private fun setClass(cls: Class<*>): Intent = Intent(this, cls)
@@ -29,6 +31,7 @@ class AdvancedDatabaseActivity : AppCompatActivity() {
     private fun onButtonClicked(it: View?) {
         when (it?.id) {
             R.id.btn_move_to_database_relation -> startActivity(setClass(DatabaseRelationActivity::class.java))
+            R.id.btn_move_to_database_paging -> startActivity(setClass(DatabasePagingActivity::class.java))
         }
     }
 

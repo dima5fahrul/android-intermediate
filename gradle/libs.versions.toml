@@ -23,8 +23,10 @@ googleAndroidLibrariesMapsplatformSecretsGradlePlugin = "2.0.1"
 playServicesLocation = "21.3.0"
 playServicesMaps = "18.1.0"
 playServicesMapsVersion = "19.0.0"
-roomCompiler = "2.6.1"
 roomKtx = "2.6.1"
+pagingRuntimeKtx = "2.1.2"
+pagingCommonAndroid = "3.3.4"
+roomPaging = "2.4.0-rc01"
 
 [libraries]
 androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activity" }
@@ -58,6 +60,9 @@ play-services-location = { module = "com.google.android.gms:play-services-locati
 play-services-maps-v1900 = { module = "com.google.android.gms:play-services-maps", version.ref = "playServicesMapsVersion" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "converterGson" }
 play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" }
+androidx-paging-runtime-ktx = { module = "androidx.paging:paging-runtime-ktx", version.ref = "pagingRuntimeKtx" }
+androidx-paging-common-android = { group = "androidx.paging", name = "paging-common-android", version.ref = "pagingCommonAndroid" }
+androidx-room-paging = { module = "androidx.room:room-paging", version.ref = "roomPaging" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

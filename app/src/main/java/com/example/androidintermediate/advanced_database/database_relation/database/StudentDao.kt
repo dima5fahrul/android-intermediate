@@ -1,11 +1,14 @@
 package com.example.androidintermediate.advanced_database.database_relation.database
 
 import androidx.lifecycle.LiveData
+import androidx.paging.DataSource
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import androidx.room.RawQuery
 import androidx.room.Transaction
+import androidx.sqlite.db.SupportSQLiteQuery
 
 @Dao
 interface StudentDao {
@@ -21,8 +24,8 @@ interface StudentDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertCourseStudentCrossRef(courseStudentCrossRef: List<CourseStudentCrossRef>)
 
-    @Query("SELECT * from student")
-    fun getAllStudent(): LiveData<List<Student>>
+    @RawQuery(observedEntities = [Student::class])
+    fun getAllStudent(query: SupportSQLiteQuery): DataSource.Factory<Int, Student>
 
     @Transaction
     @Query("SELECT * from student")

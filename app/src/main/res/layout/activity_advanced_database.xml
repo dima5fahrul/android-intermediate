@@ -15,4 +15,10 @@
         android:layout_height="wrap_content"
         android:text="@string/database_relation" />
 
+    <Button
+        android:id="@+id/btn_move_to_database_paging"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/database_paging" />
+
 </LinearLayout>

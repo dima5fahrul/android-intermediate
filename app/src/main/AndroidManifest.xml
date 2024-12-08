@@ -30,6 +30,9 @@
         android:theme="@style/Theme.AndroidIntermediate"
         tools:targetApi="31">
         <activity
+            android:name=".advanced_database.database_paging.ui.DatabasePagingActivity"
+            android:exported="false" />
+        <activity
             android:name=".advanced_database.database_relation.DatabaseRelationActivity"
             android:exported="false" />
         <activity
