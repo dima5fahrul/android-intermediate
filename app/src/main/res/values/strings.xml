@@ -161,4 +161,10 @@
     <string name="randomm">Random</string>
     <string name="sort">Sort</string>
     <string name="database_paging">Database Paging</string>
+    <string name="firebase">Firebase</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="firebase_auth">Firebase Auth</string>
+    <string name="your_web_client_id">1033369043853-dnoe61rpfb8dhr3q8f640og3hnkng8ib.apps.googleusercontent.com</string>
+    <string name="send_success">Berhasil terkirim</string>
+    <string name="send_error">Gagal terkirim</string>
 </resources>

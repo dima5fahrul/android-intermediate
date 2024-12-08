@@ -30,6 +30,15 @@
         android:theme="@style/Theme.AndroidIntermediate"
         tools:targetApi="31">
         <activity
+            android:name=".firebase.firebase_auth.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firebase.firebase_auth.FirebaseAuthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".firebase.FirebaseActivity"
+            android:exported="false" />
+        <activity
             android:name=".advanced_database.database_paging.ui.DatabasePagingActivity"
             android:exported="false" />
         <activity
